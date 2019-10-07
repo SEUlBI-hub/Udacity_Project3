@@ -39,11 +39,11 @@
 
  	<param name="initial_pose_x" value="0.0"/>
 	<param name="initial_pose_y" value="0.0"/>
-	<param name="initial_pose_a" value="-1.5708"/>
+	<param name="initial_pose_a" value="0.0"/>
 
 	<!-- Laser model parameters -->
 	<param name="laser_model_type" value="likelihood_field"/>
-	<param name="laser_liklihood_max_dist" value="3.0"/>
+	<param name="laser_liklihood_max_dist" value="5.0"/>
 	<param name="laser_z_rand" value="0.08"/>
 	</node>
 
