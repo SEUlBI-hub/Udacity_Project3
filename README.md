@@ -28,8 +28,21 @@ $ sudo apt-get install ros-kinetic-amcl
 
 **Note:** We won't be able to provide support for native ROS installations, but you can post in the #ros channel in the ND Slack to start discussions with your fellow students if you face any issues.
 
-Once all the packages are installed, clone the repository on your system and rename the project folder to `udacity_bot`. However, it is recommended that you follow the Classroom instructions on working through the project instead of cloning the repo.
+## Required packages
 
+1. AMCL Package
+ The ROS AMCL package (http://wiki.ros.org/amcl) implements this variant and you will integrate this package with your robot to localize it inside the provided map.
+ Here is the list of nodes required for AMCL package to operate
+ - Map server node: name = "map_server"
+ - AMCL node: name = "amcl"
+ - Move base node: name = "move_base"
+ 
+2. Teleop Package
+$ cd /home/workspace/catkin_ws/src
+$ git clone https://github.com/ros-teleop/teleop_twist_keyboard
+$ cd ..
+$ catkin_make
+$ source devel/setup.bash
 
 ## Run the Project
 
@@ -44,7 +57,7 @@ $ source devel/setup.bash
 And then run the following in *separate* terminals -
 
 ``` bash
-$ roslaunch udacity_bot udacity_bot
-$ roslaunch udacity_bot amcl
-$ rosrun udacity_bot navigation goal
+$ roslaunch my_robot world.launch
+$ roslaunch my_robot amcl.launch
+$ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
