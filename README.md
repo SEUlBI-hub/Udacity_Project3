@@ -1,6 +1,8 @@
 
 # Where Am I?
 
+![Image description]https://github.com/SEUlBI-hub/Udacity_Project3/blob/master/screenshoot_localisation.JPG
+
 In this project, you will learn to utilize ROS packages to accurately localize a mobile robot inside a provided map in the Gazebo and RViz simulation environments.
 
 Over the course of the project, as part of the Robotics Software Engineer Nanodegree, you will learn about several aspects of robotics with a focus on ROS, including -
